@@ -1,0 +1,22 @@
+form input, form textarea {
+  width: 100%;
+}
+
+#intro {
+  background: #11b3e4;
+  background: -moz-linear-gradient(270deg, #6357a3 0%, #11b3e4 100%);
+  background: -webkit-linear-gradient(270deg, #6357a3 0%, #11b3e4 100%);
+  background: linear-gradient(270deg, #6357a3 0%, #11b3e4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color_purple,endColorstr=$color_blue,GradientType=1);
+}
+
+.tab-nav__list li[data-tab-active] {
+  background: #11b3e4;
+  background: -moz-linear-gradient(270deg, #6357a3 0%, #11b3e4 100%);
+  background: -webkit-linear-gradient(270deg, #6357a3 0%, #11b3e4 100%);
+  background: linear-gradient(270deg, #6357a3 0%, #11b3e4 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color_purple,endColorstr=$color_blue,GradientType=1);
+  border-color: white;
+}
+
+/*# sourceMappingURL=main.css.map */

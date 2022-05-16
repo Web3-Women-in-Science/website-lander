@@ -1,0 +1,32 @@
+$color_blue: #11b3e4;
+$color_purple: #6357a3;
+$color_green: #98fdc5;
+$color_pink: #ebb5ff;
+
+// Creates a background gradient with a fallback to the bolder blue
+@mixin bg_gradient(){
+  background: $color_blue;
+  background: -moz-linear-gradient(270deg, $color_purple 0%, $color_blue 100%);
+  background: -webkit-linear-gradient(270deg, $color_purple 0%, $color_blue 100%);
+  background: linear-gradient(270deg, $color_purple 0%, $color_blue 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$color_purple,endColorstr=$color_blue,GradientType=1);
+}
+
+
+
+form{
+  input, textarea{
+    width: 100%;
+  }
+}
+
+// The hero section
+#intro{
+    @include bg_gradient();
+}
+
+.tab-nav__list li[data-tab-active]{
+  @include bg_gradient();
+  border-color: white;
+
+}
