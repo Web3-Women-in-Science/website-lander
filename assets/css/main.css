@@ -19,4 +19,8 @@ form input, form textarea {
   border-color: white;
 }
 
+.services-list__item-icon svg path {
+  fill: #11b3e4;
+}
+
 /*# sourceMappingURL=main.css.map */
