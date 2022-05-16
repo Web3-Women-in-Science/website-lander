@@ -493,15 +493,6 @@
 
     };
 
-    /* Email Obfuscation
-     * ----------------------------------------------------- */
-    const initEmail = function(){
-        let user = 'hello';
-        let site = 'web3womeninscience.xyz';
-        document.write('<a href=\"mailto:' + user + '@' + site + '\">');
-        document.write(user + '@' + site + '</a>');
-    };
-
    /* Initialize - az
     * ------------------------------------------------------ */
     (function ssInit() {
