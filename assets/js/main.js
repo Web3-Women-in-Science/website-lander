@@ -493,8 +493,7 @@
 
     };
 
-   /* Initialize - az
-    * ------------------------------------------------------ */
+    /* ------------------------------------------------------ */
     (function ssInit() {
 
         ssPreloader();
@@ -504,7 +503,6 @@
         sstabs();
         ssAlertBoxes();
         ssMoveTo();
-        initEmail();
     })();
 
 })(document.documentElement);
