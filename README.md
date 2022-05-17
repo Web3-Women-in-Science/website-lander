@@ -4,5 +4,5 @@ Technical contact: Zack West <alphazwest@gmail.com>
 
 Notes:
 
-- static HTML website currently
+- static HTML website
 - Adapted from here: https://www.styleshout.com/free-templates/khronos/

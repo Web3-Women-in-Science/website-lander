@@ -24,24 +24,31 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/favicon/site.webmanifest">
+<!--    <link rel="manifest" href="/assets/favicon/site.webmanifest">-->
     <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="/assets/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#2d89ef">
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
+    <!-- loads the video JS -->
+    <script src="assets/js/bgVid.js" type="application/javascript"></script>
+
 </head>
 
 <body id="top" class="theme-particles">
 
+    <!-- Video Background
+    ================================================== -->
+    <div class="bg-video">
+        <div id="yt-player"></div>
+    </div>
 
     <!-- preloader
     ================================================== -->
     <div id="preloader">
         <div id="loader"></div>
     </div>
-
 
     <!-- page wrap
     ================================================== -->
@@ -55,7 +62,7 @@
 
                 <div class="s-header__logo">
                     <a class="logo" href="/">
-                        <img src="assets/img/logo.png" alt="Web3 Women in Scienct">
+                        <img src="assets/img/w3w-icon.png" alt="Web3 Women in Science">
                     </a>
                 </div>
 
@@ -65,7 +72,11 @@
                     <!-- Twitter -->
                     <li>
                         <a href="https://twitter.com/web3womeninsci" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="144px" height="144px"><path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/></svg>                            <span class="screen-reader-text">Twitter</span>
+                            <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 48 48" width="144px" height="144px">
+                                <path fill="#03A9F4" d="M42,12.429c-1.323,0.586-2.746,0.977-4.247,1.162c1.526-0.906,2.7-2.351,3.251-4.058c-1.428,0.837-3.01,1.452-4.693,1.776C34.967,9.884,33.05,9,30.926,9c-4.08,0-7.387,3.278-7.387,7.32c0,0.572,0.067,1.129,0.193,1.67c-6.138-0.308-11.582-3.226-15.224-7.654c-0.64,1.082-1,2.349-1,3.686c0,2.541,1.301,4.778,3.285,6.096c-1.211-0.037-2.351-0.374-3.349-0.914c0,0.022,0,0.055,0,0.086c0,3.551,2.547,6.508,5.923,7.181c-0.617,0.169-1.269,0.263-1.941,0.263c-0.477,0-0.942-0.054-1.392-0.135c0.94,2.902,3.667,5.023,6.898,5.086c-2.528,1.96-5.712,3.134-9.174,3.134c-0.598,0-1.183-0.034-1.761-0.104C9.268,36.786,13.152,38,17.321,38c13.585,0,21.017-11.156,21.017-20.834c0-0.317-0.01-0.633-0.025-0.945C39.763,15.197,41.013,13.905,42,12.429"/>
+                            </svg>
+                            <span class="screen-reader-text">Twitter</span>
+
                         </a>
                     </li>
 
@@ -80,6 +91,8 @@
                                 <path id="XMLID_651_" fill="#FFFFFF" d="M147.3,68.2c-37.4,1.4-67.4,32.3-67.9,69.7c-0.3,24.6,12,46.4,30.9,59.3    c0.9,0.6,2.2-0.1,2.2-1.2c-0.3-4.3-0.3-8.1-0.1-12.1c0.1-1.3-0.4-2.5-1.4-3.4c-11.5-10.8-18.5-26.2-18.1-43.2    c0.8-30,24.9-54.4,54.9-55.6c32.6-1.3,59.4,24.9,59.4,57.1c0,16.4-7,31.2-18.1,41.7c-0.9,0.9-1.4,2.1-1.4,3.4    c0.2,3.9,0.1,7.7-0.1,12c-0.1,1.1,1.2,1.9,2.2,1.2c18.6-12.7,30.9-34.2,30.9-58.4C220.8,98.9,187.5,66.6,147.3,68.2z"/>
                             </g>
                         </svg>
+                        <span class="screen-reader-text">Apple Podcasts</span>
+
                         </a>
                     </li>
 
@@ -87,15 +100,18 @@
                     <li>
                         <a href="https://discord.gg/P7kPtqRfJf" target="_blank">
                             <svg width="71" height="55" viewBox="0 0 71 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0)">
-                                    <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" fill="#ffffff"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0">
-                                        <rect width="71" height="55" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>                            <span class="screen-reader-text">Discord</span>
+                                <path d="M60.1045 4.8978C55.5792 2.8214 50.7265 1.2916 45.6527 0.41542C45.5603 0.39851 45.468 0.440769 45.4204 0.525289C44.7963 1.6353 44.105 3.0834 43.6209 4.2216C38.1637 3.4046 32.7345 3.4046 27.3892 4.2216C26.905 3.0581 26.1886 1.6353 25.5617 0.525289C25.5141 0.443589 25.4218 0.40133 25.3294 0.41542C20.2584 1.2888 15.4057 2.8186 10.8776 4.8978C10.8384 4.9147 10.8048 4.9429 10.7825 4.9795C1.57795 18.7309 -0.943561 32.1443 0.293408 45.3914C0.299005 45.4562 0.335386 45.5182 0.385761 45.5576C6.45866 50.0174 12.3413 52.7249 18.1147 54.5195C18.2071 54.5477 18.305 54.5139 18.3638 54.4378C19.7295 52.5728 20.9469 50.6063 21.9907 48.5383C22.0523 48.4172 21.9935 48.2735 21.8676 48.2256C19.9366 47.4931 18.0979 46.6 16.3292 45.5858C16.1893 45.5041 16.1781 45.304 16.3068 45.2082C16.679 44.9293 17.0513 44.6391 17.4067 44.3461C17.471 44.2926 17.5606 44.2813 17.6362 44.3151C29.2558 49.6202 41.8354 49.6202 53.3179 44.3151C53.3935 44.2785 53.4831 44.2898 53.5502 44.3433C53.9057 44.6363 54.2779 44.9293 54.6529 45.2082C54.7816 45.304 54.7732 45.5041 54.6333 45.5858C52.8646 46.6197 51.0259 47.4931 49.0921 48.2228C48.9662 48.2707 48.9102 48.4172 48.9718 48.5383C50.038 50.6034 51.2554 52.5699 52.5959 54.435C52.6519 54.5139 52.7526 54.5477 52.845 54.5195C58.6464 52.7249 64.529 50.0174 70.6019 45.5576C70.6551 45.5182 70.6887 45.459 70.6943 45.3942C72.1747 30.0791 68.2147 16.7757 60.1968 4.9823C60.1772 4.9429 60.1437 4.9147 60.1045 4.8978ZM23.7259 37.3253C20.2276 37.3253 17.3451 34.1136 17.3451 30.1693C17.3451 26.225 20.1717 23.0133 23.7259 23.0133C27.308 23.0133 30.1626 26.2532 30.1066 30.1693C30.1066 34.1136 27.28 37.3253 23.7259 37.3253ZM47.3178 37.3253C43.8196 37.3253 40.9371 34.1136 40.9371 30.1693C40.9371 26.225 43.7636 23.0133 47.3178 23.0133C50.9 23.0133 53.7545 26.2532 53.6986 30.1693C53.6986 34.1136 50.9 37.3253 47.3178 37.3253Z" fill="#ffffff"/>
+                            </svg>
+                            <span class="screen-reader-text">Discord</span>
+                        </a>
+                    </li>
+
+                    <!-- Telegram -->
+                    <li>
+                        <a href="https://t.me/+Y6OzEBEnSaVkMTM8" target="_blank">
+                            <svg width="24px" height="24px" xmlns="http://www.w3.org/2000/svg">
+                                <path id="telegram-1" d="M18.384,22.779c0.322,0.228 0.737,0.285 1.107,0.145c0.37,-0.141 0.642,-0.457 0.724,-0.84c0.869,-4.084 2.977,-14.421 3.768,-18.136c0.06,-0.28 -0.04,-0.571 -0.26,-0.758c-0.22,-0.187 -0.525,-0.241 -0.797,-0.14c-4.193,1.552 -17.106,6.397 -22.384,8.35c-0.335,0.124 -0.553,0.446 -0.542,0.799c0.012,0.354 0.25,0.661 0.593,0.764c2.367,0.708 5.474,1.693 5.474,1.693c0,0 1.452,4.385 2.209,6.615c0.095,0.28 0.314,0.5 0.603,0.576c0.288,0.075 0.596,-0.004 0.811,-0.207c1.216,-1.148 3.096,-2.923 3.096,-2.923c0,0 3.572,2.619 5.598,4.062Zm-11.01,-8.677l1.679,5.538l0.373,-3.507c0,0 6.487,-5.851 10.185,-9.186c0.108,-0.098 0.123,-0.262 0.033,-0.377c-0.089,-0.115 -0.253,-0.142 -0.376,-0.064c-4.286,2.737 -11.894,7.596 -11.894,7.596Z"/></svg>
+                            <span class="screen-reader-text">Telegram</span>
                         </a>
                     </li>
 
@@ -115,26 +131,13 @@
                 <div class="column lg-12">
                     
                     <div class="counter">
-                        <div class="counter__time">
-                            <span class="ss-days">365</span>
-                            <span>days</span>
-                        </div>
-                        <div class="counter__time">
-                            <span class="ss-hours">01</span>
-                            <span>hours</span>
-                        </div>
-                        <div class="counter__time minutes">
-                            <span class="ss-minutes">01</span>
-                            <span>mins</span>
-                        </div>
-                        <div class="counter__time">
-                            <span class="ss-seconds">55</span>
-                            <span>secs</span>
-                        </div>
+                        <h2 class="headline">
+                            Web3 Women in Science
+                        </h2>
                     </div>  <!-- end counter -->
 
                     <div class="s-intro__content-bottom">
-                        <h1 class="s-intro__content-title">Soon.</h1>
+                        <h3 class="leader">Soon.</h3>
                         <p>
                         At Web3WomenInScience, we are planning big things <br>
                         at the intersection of Science and Web3 Technology. <br>
@@ -165,6 +168,7 @@
             <div class="row">
                 <div class="column lg-12">
 
+                    <!-- Tab Navigation Section -->
                     <nav class="tab-nav">
                         <ul class="tab-nav__list"> 
                             <li class="active" data-id="tab-about">
@@ -179,7 +183,8 @@
                             </li>
                         </ul>
                     </nav> <!-- end tab-nav -->
-        
+
+                    <!-- Tab Content Section -->
                     <div class="tab-content">
         
                         <!-- 01 - tab about -->
@@ -212,7 +217,7 @@
                         </div> <!-- end 01 - tab about -->
         
                         <!-- 02 - tab connect -->
-                        <div id="tab-services" class='tab-content__item'>
+                        <div id="tab-connect" class='tab-content__item'>
         
                             <div class="row tab-content__item-header">
                                 <div class="column">
@@ -240,7 +245,7 @@
                                     <div class="services-list__item-content">
                                         <h4 class="item-title">Twitter</h4>
                                         <p>
-                                            Our organization posts updates and news to our <a href="https://twitter.com/web3womeninsci" target="_blank">official Twitter account</a>. Here you
+                                            Our organization posts updates and news to our official <a href="https://twitter.com/web3womeninsci" target="_blank">Twitter account</a>. Here you
                                             can find updates about our organization's plans, meetings, and any upcoming events.
                                             We regularly host Twitter Spaces and many of our members also host DeSci focused
                                             spaces as well.
@@ -263,13 +268,27 @@
                                     <div class="services-list__item-content">
                                         <h4 class="item-title">Discord</h4>
                                         <p>
-                                            Connect with our community on Discord where you'll find conversations centered about
-                                            Web3, science, and our communities' involvement. You don't have to be a science professional
-                                            or have any tech background to join in the conversation!
+                                            Connect with our <a href="https://discord.gg/P7kPtqRfJf" target="_blank">Discord community</a>
+                                            where you'll find conversations centered about Web3, science, and our communities' involvement.
+                                            You don't have to be a science professional or have any tech background to join in the conversation!
                                         </p>
                                     </div>
                                 </div>
                             </div> <!-- end services-list -->
+
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    <h2>Questions?</h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <p>
+                                        If you have questions, comments, or would like to get involved please use the contact form below.
+                                    </p>
+                                </div>
+                            </div>
 
                             <!-- Contact Form via Formspree -->
                             <div class="row">
