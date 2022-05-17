@@ -57,34 +57,14 @@ form input, form textarea {
   background: white;
 }
 
-/** Video Background & Containers **/
-.bg-video {
-  position: absolute;
-  overflow: hidden;
+#bgVideo {
   width: 100vw;
   height: 100vh;
-}
-
-.bg-video iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100vw;
-  height: 100vh;
-  transform: translate(-50%, -50%);
-}
-
-@media (min-aspect-ratio: 16/9) {
-  .bg-video iframe {
-    /* height = 100 * (9 / 16) = 56.25 */
-    height: 56.25vw;
-  }
-}
-@media (max-aspect-ratio: 16/9) {
-  .bg-video iframe {
-    /* width = 100 / (9 / 16) = 177.777777 */
-    width: 177.78vh;
-  }
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=main.css.map */

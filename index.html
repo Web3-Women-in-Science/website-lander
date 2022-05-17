@@ -31,18 +31,16 @@
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
-    <!-- loads the video JS -->
-    <script src="assets/js/bgVid.js" type="application/javascript"></script>
-
 </head>
 
 <body id="top" class="theme-particles">
 
     <!-- Video Background
     ================================================== -->
-    <div class="bg-video">
-        <div id="yt-player"></div>
-    </div>
+    <video autoplay muted loop id="bgVideo">
+        <source src="assets/video/shortLoop.webm" type="video/webm">
+        <source src="assets/video/shortLoop.mp4" type="video/mp4">
+    </video>
 
     <!-- preloader
     ================================================== -->
