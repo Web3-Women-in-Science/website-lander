@@ -1,0 +1,56 @@
+@import "vars";
+
+.team-members{
+
+  .team-member{
+
+    margin-bottom: 4rem;
+
+    .name{
+      font-size: 1.5em;
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    .headshot{
+      display: flex;
+      border-radius: 100%;
+      overflow: hidden;
+
+      img{
+        margin: 0;
+      }
+    }
+
+    .bio{
+      font-size: 1em;
+      margin: 0;
+      padding: 1rem 0;
+    }
+
+    .role{
+      font-weight: bold;
+      font-family: monospace;
+      color: $color_blue_bold;
+    }
+
+    .social-profiles{
+      display: flex;
+      a + a{
+        margin-left: 4px;
+      }
+      .icon{
+
+        // changes any color to light grey
+        filter: brightness(0%);
+        opacity: .25;
+        &:hover{
+          opacity: .5;
+        }
+        path{
+          fill: $color_purple;
+        }
+      }
+    }
+  }
+}

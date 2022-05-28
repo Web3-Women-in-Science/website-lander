@@ -1,83 +1,19 @@
-$color_blue: #11b3e4;
-$color_purple: #6357a3;
-$color_green: #98fdc5;
-$color_pink: #ebb5ff;
-$bg_gradient_opacity: .25;
+// General use
+@import 'vars';
+@import 'mixins';
 
-// Creates a background gradient with a fallback to the bolder blue
-@mixin bg_gradient(){
-  background: $color_blue;
-  background: -moz-linear-gradient(270deg, transparentize($color_purple, $bg_gradient_opacity) 0%, transparentize($color_blue, $bg_gradient_opacity) 100%);
-  background: -webkit-linear-gradient(270deg, transparentize($color_purple, $bg_gradient_opacity) 0%, transparentize($color_blue, $bg_gradient_opacity) 100%);
-  background: linear-gradient(270deg, transparentize($color_purple, $bg_gradient_opacity) 0%, transparentize($color_blue, $bg_gradient_opacity) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparentize($color_purple, $bg_gradient_opacity),endColorstr=transparentize($color_blue, $bg_gradient_opacity),GradientType=1);
-}
+// Elements/sections
+@import "homepage";
+@import 'tweaks';
+@import 'vars';
+@import 'icons';
+@import 'team';
+
+
+
 
 body{
   font-size: 16px;
   overflow-x: hidden;
 }
 
-.column {
-  p{
-    a{
-      border-bottom: solid 2px $color_blue;
-      transition: 250ms all ease-in-out;
-      color: $color_blue;
-
-      &:hover{
-        transition: 250ms all ease-in-out;
-        border-bottom: solid 2px $color_purple;
-        color: $color_purple;
-      }
-    }
-  }
-}
-
-.headline{
-  font-size: 54px;
-  color: white;
-  font-weight: bold;
-  line-height: normal;
-}
-.leader{
-  font-size: 38px;
-  color: white;
-  font-weight: bold;
-  line-height: normal;
-}
-
-
-form{
-  input, textarea{
-    width: 100%;
-  }
-}
-
-// The hero section
-#intro{
-    @include bg_gradient();
-}
-
-.tab-nav__list li[data-tab-active]{
-  @include bg_gradient();
-  border-color: white;
-
-}
-
-.services-list__item-icon svg path{
-  fill: $color_blue;
-}
-
-#info{
-  background: white;
-}
-#bgVideo{
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}

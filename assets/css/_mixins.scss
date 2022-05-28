@@ -1,0 +1,10 @@
+@import 'vars';
+
+// Creates a background gradient with a fallback to the bolder blue
+@mixin bg_gradient(){
+  background: $color_blue;
+  background: -moz-linear-gradient(270deg, transparentize($color_purple, $bg_gradient_opacity) 0%, transparentize($color_blue, $bg_gradient_opacity) 100%);
+  background: -webkit-linear-gradient(270deg, transparentize($color_purple, $bg_gradient_opacity) 0%, transparentize($color_blue, $bg_gradient_opacity) 100%);
+  background: linear-gradient(270deg, transparentize($color_purple, $bg_gradient_opacity) 0%, transparentize($color_blue, $bg_gradient_opacity) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=transparentize($color_purple, $bg_gradient_opacity),endColorstr=transparentize($color_blue, $bg_gradient_opacity),GradientType=1);
+}

@@ -1,8 +1,14 @@
-body {
-  font-size: 16px;
-  overflow-x: hidden;
-}
-
+/** basic color definitions **/
+/** misc parameters **/
+/** basic color definitions **/
+/** misc parameters **/
+/** basic color definitions **/
+/** misc parameters **/
+/** basic color definitions **/
+/** misc parameters **/
+/**
+Mostly tweaks to the template
+ */
 .column p a {
   border-bottom: solid 2px #11b3e4;
   transition: 250ms all ease-in-out;
@@ -65,6 +71,86 @@ form input, form textarea {
   top: 0;
   left: 0;
   z-index: -1;
+}
+
+/**
+Mostly styles to tweak the template to play friendly with the bootstrap grid.
+ */
+.ss-go-top, .s-header__social {
+  width: auto;
+}
+
+/** basic color definitions **/
+/** misc parameters **/
+/**
+Places icons after certain elements like e.g. social media links
+ */
+.icon {
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+}
+.icon.icon-twitter {
+  background-image: url(/assets/svg/twitter-sq.svg);
+}
+.icon.icon-linkedin {
+  background-image: url(/assets/svg/linkedin.svg);
+}
+.icon.icon-www {
+  background-image: url(/assets/svg/www.svg);
+}
+
+/** basic color definitions **/
+/** misc parameters **/
+.team-members .team-member {
+  margin-bottom: 4rem;
+}
+.team-members .team-member .name {
+  font-size: 1.5em;
+  margin: 0;
+  padding: 1rem 0;
+}
+.team-members .team-member .headshot {
+  display: flex;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.team-members .team-member .headshot img {
+  margin: 0;
+}
+.team-members .team-member .bio {
+  font-size: 1em;
+  margin: 0;
+  padding: 1rem 0;
+}
+.team-members .team-member .role {
+  font-weight: bold;
+  font-family: monospace;
+  color: #1121e4;
+}
+.team-members .team-member .social-profiles {
+  display: flex;
+}
+.team-members .team-member .social-profiles a + a {
+  margin-left: 4px;
+}
+.team-members .team-member .social-profiles .icon {
+  filter: brightness(0%);
+  opacity: 0.25;
+}
+.team-members .team-member .social-profiles .icon:hover {
+  opacity: 0.5;
+}
+.team-members .team-member .social-profiles .icon path {
+  fill: #6357a3;
+}
+
+body {
+  font-size: 16px;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

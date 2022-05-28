@@ -1,0 +1,70 @@
+@import 'vars';
+@import 'mixins';
+
+
+/**
+Mostly tweaks to the template
+ */
+.column {
+  p{
+    a{
+      border-bottom: solid 2px $color_blue;
+      transition: 250ms all ease-in-out;
+      color: $color_blue;
+
+      &:hover{
+        transition: 250ms all ease-in-out;
+        border-bottom: solid 2px $color_purple;
+        color: $color_purple;
+      }
+    }
+  }
+}
+
+.headline{
+  font-size: 54px;
+  color: white;
+  font-weight: bold;
+  line-height: normal;
+}
+.leader{
+  font-size: 38px;
+  color: white;
+  font-weight: bold;
+  line-height: normal;
+}
+
+
+form{
+  input, textarea{
+    width: 100%;
+  }
+}
+
+// The hero section
+#intro{
+  @include bg_gradient();
+}
+
+.tab-nav__list li[data-tab-active]{
+  @include bg_gradient();
+  border-color: white;
+
+}
+
+.services-list__item-icon svg path{
+  fill: $color_blue;
+}
+
+#info{
+  background: white;
+}
+#bgVideo{
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}

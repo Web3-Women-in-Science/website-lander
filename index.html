@@ -15,6 +15,7 @@
 
     <!-- CSS
     ================================================== -->
+<!--    <link rel="stylesheet" href="assets/css/bootstrap.grid.min.css">-->
     <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -168,13 +169,24 @@
 
                     <!-- Tab Navigation Section -->
                     <nav class="tab-nav">
-                        <ul class="tab-nav__list"> 
+                        <ul class="tab-nav__list">
+
+                            <!-- Get to Know us -->
                             <li class="active" data-id="tab-about">
                                 <a href="#tab-about">
                                     Get to Know Us
                                 </a>
                             </li>
-                            <li>
+
+                            <!-- Team -->
+                            <li data-id="tab-team">
+                                <a href="#tab-team">
+                                    Our Team
+                                </a>
+                            </li>
+
+                            <!-- Connect -->
+                            <li data-id="tab-connect">
                                 <a href="#tab-connect">
                                     Connect
                                 </a>
@@ -213,8 +225,126 @@
                             </div>
                             
                         </div> <!-- end 01 - tab about -->
-        
-                        <!-- 02 - tab connect -->
+
+                        <div id="tab-team" class='tab-content__item'>
+
+                            <div class="row tab-content__item-header">
+                                <div class="column">
+                                    <h2>Our Team</h2>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="column">
+                                    <p class="lead">
+                                        Our team reflects a diverse skillset and assortment of professional backgrounds
+                                        in the fields of science, technology, and even law. Our unique perspectives
+                                        provide a foundation on which we seek to build a more open, equitable, and
+                                        robust international scientific community in the web3 space.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Team Members -->
+                            <div class="row team-members">
+
+                                <!-- Ariella -->
+                                <div class="column lg-4 tab-6 mob-12 team-member">
+                                    <div class="headshot">
+                                        <img src="assets/img/headshots/ariella-coler-reilly-w3ws.jpg" alt="ariella-coler-reilly-web3-women-in-science"/>
+                                    </div>
+                                    <h3 class="name">Ariella Coler-Reilly</h3>
+                                    <span class="role">Co-Founder & Community Manager</span>
+                                    <p class="bio">
+                                        MD PhD candidate at Washington University studying medicine and molecular biology.
+                                    </p>
+                                    <div class="social-profiles">
+                                        <a href="https://www.linkedin.com/in/ariella-coler-reilly/" target="_blank" rel="nofollow" class="icon icon-linkedin"></a>
+                                    </div>
+                                </div>
+
+                                <!-- Jocelyn -->
+                                <div class="column lg-4 tab-6 mob-12 team-member">
+                                    <div class="headshot">
+                                        <img src="assets/img/headshots/jocelynn-pearl-w3ws.jpg" alt="jocelynn-pearl-web3-women-in-science"/>
+                                    </div>
+                                    <h3 class="name">Dr. Jocelynn Pearl, PhD</h3>
+                                    <span class="role">Co-Founder & Podcast Director</span>
+                                    <p class="bio">
+                                        Co-Founder, Senior Scientist at Tune Therapeutics & Host of Lady Scientist Podcast
+                                    </p>
+                                    <div class="social-profiles">
+                                        <a href="https://www.linkedin.com/in/jocelynnpearlphd/" target="_blank" rel="nofollow" class="icon icon-linkedin"></a>
+                                    </div>
+                                </div>
+
+                                <!-- Sarah H. -->
+                                <div class="column lg-4 tab-6 mob-12 team-member">
+                                    <div class="headshot">
+                                        <img src="assets/img/headshots/sarah-hamburg-w3ws.jpg" alt="sarah-hamburg-web3-women-in-science"/>
+                                    </div>
+                                    <h3 class="name">Sarah Hamburg, PhD</h3>
+                                    <span class="role">Telegram Manager</span>
+                                    <p class="bio">
+                                        PhD in Cognitive Neuroscience, previous work in academia, FinTech, and now Web3.
+                                    </p>
+                                    <div class="social-profiles">
+                                        <a href="https://www.linkedin.com/in/sarah-hamburg-phd-9510a910a/" target="_blank" rel="nofollow" class="icon icon-linkedin"></a>
+                                    </div>
+                                </div>
+
+                                <!-- Ines -->
+                                <div class="column lg-4 tab-6 mob-12 team-member">
+                                    <div class="headshot">
+                                        <img src="assets/img/headshots/ines-santos-silva-w3ws.jpg" alt="ariella-coler-reilly-web3-women-in-science"/>
+                                    </div>
+                                    <h3 class="name">Inês Santos Silva</h3>
+                                    <span class="role">Co-Founder & Business Strategy</span>
+                                    <p class="bio">
+                                        Generalist | Fighting for gender diversity & inclusion | Going deep into #DeSci
+                                    </p>
+                                    <div class="social-profiles">
+                                        <a href="https://www.linkedin.com/in/inessantossilva/" target="_blank" rel="nofollow" class="icon icon-linkedin"></a>
+                                    </div>
+                                </div>
+
+                                <!-- Elizabeth -->
+                                <div class="column lg-4 tab-6 mob-12 team-member">
+                                    <div class="headshot">
+                                        <img src="assets/img/headshots/elizabeth-tsehai-w3ws.jpg" alt="elizabeth-tsehai-web3-women-in-science"/>
+                                    </div>
+                                    <h3 class="name">Elizabeth Tsehai</h3>
+                                    <span class="role">Diversity Outreach Coordinator</span>
+                                    <p class="bio">
+                                        Studied Int'l Relations, focused on Africa now DC-based and passionate about DeSci
+                                    </p>
+                                    <div class="social-profiles">
+                                        <a href="https://www.linkedin.com/in/elizabeth-tsehai-5ab357/" target="_blank" rel="nofollow" class="icon icon-linkedin"></a>
+                                    </div>
+                                </div>
+
+                                <!-- Sarah F. -->
+                                <div class="column lg-4 tab-6 mob-12 team-member">
+                                    <div class="headshot">
+                                        <img src="assets/img/headshots/sarah-friday-w3ws.jpeg" alt="sarah-friday-web3-women-in-science"/>
+                                    </div>
+                                    <h3 class="name">Sarah Friday</h3>
+                                    <span class="role">Community News</span>
+                                    <p class="bio">
+                                        MD Candidate UNC Chapel Hill excited about web3, science, community involvement.
+                                    </p>
+                                    <div class="social-profiles">
+                                        <a href="https://twitter.com/wilmasthoughts" target="_blank" rel="nofollow" class="icon icon-twitter"></a>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div> <!-- end 02 - tab team -->
+
+
+                        <!-- 03 - tab connect -->
                         <div id="tab-connect" class='tab-content__item'>
         
                             <div class="row tab-content__item-header">
@@ -307,7 +437,7 @@
                                 </div>
                             </div>
                             
-                        </div> <!-- end 02 - tab services -->
+                        </div> <!-- end 03 - tab services -->
 
                     </div> <!-- end tab content -->
 

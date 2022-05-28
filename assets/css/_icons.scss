@@ -1,0 +1,22 @@
+/**
+Places icons after certain elements like e.g. social media links
+ */
+.icon{
+
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size:contain,contain;
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+
+  &.icon-twitter{
+    background-image: url(/assets/svg/twitter-sq.svg);
+  }
+  &.icon-linkedin{
+    background-image: url(/assets/svg/linkedin.svg);
+  }
+  &.icon-www{
+    background-image: url(/assets/svg/www.svg);
+  }
+}
