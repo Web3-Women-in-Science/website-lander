@@ -31,7 +31,9 @@
     .role{
       font-weight: bold;
       font-family: monospace;
-      color: $color_blue_bold;
+      background: -webkit-linear-gradient(42deg, $color_blue, $color_purple);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .social-profiles{

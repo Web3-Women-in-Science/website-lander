@@ -73,11 +73,22 @@ form input, form textarea {
   z-index: -1;
 }
 
+/** basic color definitions **/
+/** misc parameters **/
 /**
 Mostly styles to tweak the template to play friendly with the bootstrap grid.
  */
 .ss-go-top, .s-header__social {
   width: auto;
+}
+
+.ss-go-top a:hover {
+  background-color: #11b3e4;
+  border-color: white;
+}
+
+.ss-copyright {
+  font-family: monospace;
 }
 
 /** basic color definitions **/
@@ -129,7 +140,9 @@ Places icons after certain elements like e.g. social media links
 .team-members .team-member .role {
   font-weight: bold;
   font-family: monospace;
-  color: #1121e4;
+  background: -webkit-linear-gradient(42deg, #11b3e4, #6357a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .team-members .team-member .social-profiles {
   display: flex;
