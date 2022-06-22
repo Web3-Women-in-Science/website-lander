@@ -91,6 +91,10 @@ Mostly styles to tweak the template to play friendly with the bootstrap grid.
   font-family: monospace;
 }
 
+.s-intro {
+  height: unset !important;
+}
+
 /** basic color definitions **/
 /** misc parameters **/
 /**

@@ -16,3 +16,8 @@ Mostly styles to tweak the template to play friendly with the bootstrap grid.
 .ss-copyright{
   font-family: monospace;
 }
+
+// fix for weird subtitle display on homepage masthead.
+.s-intro{
+  height: unset!important;
+}
