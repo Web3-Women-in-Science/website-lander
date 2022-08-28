@@ -6,7 +6,7 @@ Technical contact: Zack West <alphazwest@gmail.com>
 
 This project is currently deployed on a temporary domain here:
 
-https://dreamy-starburst-fcef4d.netlify.app/
+https://womeninscience.xyz
 
 Notes:
 
